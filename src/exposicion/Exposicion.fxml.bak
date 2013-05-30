@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="panel" prefHeight="648.0" prefWidth="629.0000999999975" styleClass="fondo" xmlns:fx="http://javafx.com/fxml" fx:controller="exposicion.ExposicionController">
+  <children>
+    <TextField fx:id="txtNombre" layoutX="175.0" layoutY="87.0" onKeyReleased="#validarCampos" prefWidth="200.0" />
+    <TextField fx:id="txtApellido" layoutX="174.0" layoutY="120.0" onKeyReleased="#validarCampos" prefWidth="200.0" />
+    <Button fx:id="btnCargar" layoutX="19.0" layoutY="382.0" mnemonicParsing="false" onAction="#cargarEnLaTabla" prefHeight="35.0" prefWidth="355.9999000000025" styleClass="boton" text="Guardar">
+      <stylesheets>
+        <URL value="@agenda.css" />
+      </stylesheets>
+    </Button>
+    <Label id="lnBombre" fx:id="lbnombre" layoutX="20.0" layoutY="90.0" prefWidth="98.0" text="Nombre" />
+    <Label fx:id="lbApellido" layoutX="22.0" layoutY="123.0" prefWidth="84.0" text="Apellido" />
+    <RadioButton fx:id="rbMasculino" layoutX="176.0" layoutY="152.0" mnemonicParsing="false" styleClass="radio-button_radio" text="Masculino">
+      <stylesheets>
+        <URL value="@estilo.css" />
+      </stylesheets>
+    </RadioButton>
+    <RadioButton fx:id="rbFemenino" layoutX="275.0" layoutY="152.0" mnemonicParsing="false" text="Femenino">
+      <stylesheets>
+        <URL value="@estilo.css" />
+      </stylesheets>
+    </RadioButton>
+    <Label fx:id="lbSexo" layoutX="20.0" layoutY="152.0" prefWidth="84.0" text="Sexo" />
+    <TableView fx:id="jTRegistros" editable="true" layoutX="14.0" layoutY="432.0" prefHeight="200.0" prefWidth="442.0" />
+    <Label id="lbCiudad" fx:id="lbCiudadResidencia" layoutX="20.0" layoutY="178.0" prefHeight="22.0" prefWidth="98.0" text="Ciudad Residencia" />
+    <Label fx:id="lbDireccion" layoutX="19.0" layoutY="210.0" prefHeight="22.0" prefWidth="118.0" text="Direccion Residencia" />
+    <TextField fx:id="txtDireccion" layoutX="175.0" layoutY="210.0" prefWidth="200.0" />
+    <TextField fx:id="txtCelular" layoutX="175.0" layoutY="285.0" onKeyReleased="#validarCampos" prefWidth="200.0" />
+    <TextField fx:id="txtTelefonoFijo" layoutX="174.0" layoutY="316.0" onKeyReleased="#validarCampos" prefWidth="200.9998779296875" />
+    <Label fx:id="lbCelular" layoutX="20.0" layoutY="285.0" prefHeight="22.0" prefWidth="98.0" text="Telefono Celular" />
+    <Label layoutX="19.0" layoutY="316.0" prefHeight="22.0" prefWidth="84.0" text="Telefono Fijo" />
+    <Label fx:id="lbCorreo" layoutX="19.0" layoutY="351.0" prefHeight="22.0" prefWidth="104.0" text="Correo Electronico" />
+    <TextField fx:id="txtCorreo" layoutX="174.0" layoutY="351.0" prefWidth="200.00009999999747" />
+    <Label fx:id="lbDatosPersonales" layoutX="19.0" layoutY="49.0" prefHeight="34.0" prefWidth="200.0" styleClass="label_titulos" text="Datos Personales">
+      <font>
+        <Font size="18.0" fx:id="x1" />
+      </font>
+      <stylesheets>
+        <URL value="@agenda.css" />
+      </stylesheets>
+      <textFill>
+        <Color blue="1.000" green="0.200" red="0.264" fx:id="x2" />
+      </textFill>
+    </Label>
+    <Label fx:id="lbContacto" font="$x1" layoutX="14.0" layoutY="240.0" prefHeight="34.0" prefWidth="171.0" styleClass="label_titulos" text="Contacto" textFill="$x2">
+      <stylesheets>
+        <URL value="@estilo.css" />
+        <URL value="@agenda.css" />
+      </stylesheets>
+    </Label>
+    <Button id="btnCargar" fx:id="btnCargarImagen" layoutX="400.0" layoutY="233.0" mnemonicParsing="false" onAction="#elegirImagen" prefHeight="35.0" styleClass="boton" text="Cargar Imagen">
+      <stylesheets>
+        <URL value="@agenda.css" />
+      </stylesheets>
+    </Button>
+    <Label fx:id="lbImagen" blendMode="COLOR_DODGE" layoutX="400.0" layoutY="73.0" prefHeight="127.0" prefWidth="124.0" style="-fx-border-width: 2;&#10;-fx-border-color: white;" underline="true" />
+    <ComboBox fx:id="cbCiudad" layoutX="175.0" layoutY="178.0" prefHeight="21.0" prefWidth="135.50006103515625">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <MenuBar fx:id="mbGuardar" layoutY="2.0" prefWidth="629.0001220703125">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Close" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Delete" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+  </children>
+  <stylesheets>
+    <URL value="@estilo.css" />
+  </stylesheets>
+</AnchorPane>

@@ -1,0 +1,63 @@
+.fondo{
+-fx-base: rgb(50,50,50);
+-fx-background: rgb(50,50,50);
+-fx-control-inner-background: rgb(50,50,50);
+-fx-background-color: radial-gradient(radius 100%, derive(-fx-base,20%), derive(-fx-base,-20%));
+/*
+-fx-background-color: #1d1d1d;
+*/
+}
+
+.boton{
+-fx-font-veight: bold;
+-fx-font-size: 15px;
+-fx-background-color: linear-gradient(#61a2b1,#2A5058);
+-fx-effects: dropshadow(three-pass-box, rgba(0,0,0,0,6),5,0.0,0,1);
+/*
+-fx-padding: 5 22 5 22;   
+-fx-border-color: #e2e2e2;
+-fx-border-width: 2;
+-fx-background-radius: 0;
+-fx-background-color: #1d1d1d;
+-fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+-fx-font-size: 11pt;
+-fx-text-fill: #d8d8d8;
+*/
+}
+
+
+.label_titulos{
+-fx-base: rgb(50,50,50);
+-fx-font-family: "Segoe";
+-fx-font-size:25px;
+-fx-text-fill: #EACD58;
+/*
+fx-font-size: 35px;
+-fx-font-family: "Segoe ";
+-fx-text-fill: white;
+*/
+}
+
+.label{
+-fx-base: rgb(50,50,50);
+-fx-font-family: "Segoe UI Semibold";
+-fx-font-size:25px;
+-fx-text-fill: #EACD58;
+
+/*
+fx-font-size: 10px;
+-fx-font-family: "Segoe UI Light";
+-fx-text-fill: white;
+*/
+}
+
+/*
+.radio-button_radio  {
+-fx-background-color: #cfcfcf;
+-fx-background-radius: 1.0em; 
+-fx-background-insets: 0;
+-fx-border-radius: 1.0em;
+-fx-border-color: #cfcfcf;
+-fx-padding: 1px; 
+}
+*/

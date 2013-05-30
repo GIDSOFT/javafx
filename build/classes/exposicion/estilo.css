@@ -1,0 +1,22 @@
+.fondo{
+-fx-base: rgb(50,50,50);
+-fx-background: rgb(50,50,50);
+-fx-control-inner-background: rgb(50,50,50);
+-fx-background-color: radial-gradient(radius 100%, derive(-fx-base,20%), derive(-fx-base,-20%));
+}
+
+.boton{
+-fx-font-veight: bold;
+-fx-font-size: 15px;
+-fx-background-color: linear-gradient(#61a2b1,#2A5058);
+-fx-effects: dropshadow(three-pass-box, rgba(0,0,0,0,6),5,0.0,0,1);
+}
+
+
+.label_titulos{
+-fx-base: rgb(50,50,50);
+-fx-font-family: "Segoe";
+-fx-font-size:25px;
+-fx-text-fill: #EACD58;
+}
+

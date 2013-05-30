@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Exposicion.jnlp">
+  <information>
+    <title>Exposicion</title>
+    <vendor>jucazuse</vendor>
+    <description>Sample JavaFX 2.0 application.</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <jfx:javafx-runtime version="2.2+" href="http://javadl.sun.com/webapps/download/GetFile/javafx-latest/windows-i586/javafx2.jnlp"/>
+  </resources>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Exposicion.jar" size="35779" download="eager" />
+    <jar href="lib/commons-beanutils-1.8.0.jar" size="247273" download="eager" />
+    <jar href="lib/commons-collections-2.1.1.jar" size="193021" download="eager" />
+    <jar href="lib/commons-digester-2.1.jar" size="215294" download="eager" />
+    <jar href="lib/commons-javaflow-20060411.jar" size="102268" download="eager" />
+    <jar href="lib/commons-logging-1.1.1.jar" size="65440" download="eager" />
+    <jar href="lib/groovy-all-1.7.5.jar" size="5791732" download="eager" />
+    <jar href="lib/iText-2.1.7.jar" size="1183111" download="eager" />
+    <jar href="lib/jasperreports-4.6.0.jar" size="4235171" download="eager" />
+    <jar href="lib/jasperreports-applet-4.6.0.jar" size="522745" download="eager" />
+    <jar href="lib/jasperreports-fonts-4.6.0.jar" size="2480988" download="eager" />
+    <jar href="lib/jasperreports-javaflow-4.6.0.jar" size="4278364" download="eager" />
+    <jar href="lib/javafx-dialogs-0.0.1.jar" size="122518" download="eager" />
+    <jar href="lib/poi-3.7-20101029.jar" size="1797473" download="eager" />
+    <jar href="lib/poi-ooxml-3.7-20101029.jar" size="522434" download="eager" />
+    <jar href="lib/poi-ooxml-schemas-3.7-20101029.jar" size="4395969" download="eager" />
+    <jar href="lib/postgresql-9.1-903.jdbc3.jar" size="529873" download="eager" />
+  </resources>
+<security>
+  <all-permissions/>
+</security>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Exposicion" >
+    <param name="requiredFXVersion" value="2.2+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="exposicion.Exposicion"  name="Exposicion" />
+  <update check="always"/>
+</jnlp>
